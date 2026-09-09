@@ -35,7 +35,7 @@ Passionate about optimizing IT operations through automation, security best prac
 
 ## Experience
 
-### 1) HurryApp
+### 1) INCUBE
 **Title:** DevOps Engineer  
 **Duration:** 1 Jan 2025 – Present
 - Implement and manage containerized applications using Docker, Kubernetes, and HelmChart.
