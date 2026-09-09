@@ -89,7 +89,8 @@ Passionate about optimizing IT operations through automation, security best prac
 ---
 
 ## Certifications
-- **AWS Certified Solutions Architect – Associate (SAA-C03)** – Ongoing
+- Microsoft Azure Administrator Associate – AZ-104 
+- Designing and Implementing Microsoft DevOps Solutions (AZ-400) [In Progress]
 - **eLearnSecurity:**
     - Certified Threat Hunting Professional (Ecthpv2)
     - Certified Malware Analysis Professional (eCMPA)
