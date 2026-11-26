@@ -641,7 +641,36 @@ section + section { border-top: 1px solid var(--border); }
 
 .cert-icon .i { width: 22px; height: 22px; }
 
-.cert-body { min-width: 0; }
+.cert-body { min-width: 0; flex: 1; }
+
+.lang-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.lang-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.lang-list li + li { padding-top: 0.6rem; border-top: 1px solid var(--border); }
+
+.lang-level {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
 
 .cert-name { font-weight: 600; font-size: 1rem; line-height: 1.4; margin-bottom: 0.3rem; }
 
@@ -1287,7 +1316,10 @@ footer span { color: var(--text); font-weight: 600; }
         <div class="cert-icon"><svg class="i"><use href="#i-globe"/></svg></div>
         <div class="cert-body">
           <div class="cert-name">Languages</div>
-          <div class="cert-issuer">Arabic: Native · English: Technical Proficiency</div>
+          <ul class="lang-list">
+            <li><span>Arabic</span><span class="lang-level">Native</span></li>
+            <li><span>English</span><span class="lang-level">Technical Proficiency</span></li>
+          </ul>
         </div>
       </div>
     </div>
