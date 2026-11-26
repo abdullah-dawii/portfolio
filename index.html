@@ -766,7 +766,24 @@ footer {
   color: var(--faint);
 }
 
-footer span { color: var(--text); font-weight: 600; }
+footer > .wrap > span { color: var(--text); font-weight: 600; }
+
+.ci-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+  margin-top: 0.9rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--faint);
+}
+
+.ci-line a { color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; }
+.ci-line a:hover { color: var(--text); }
+.ci-line .ok { width: 7px; height: 7px; border-radius: 50%; background: var(--green); }
+.ci-line b { color: var(--green); font-weight: 500; }
 
 /* REVEAL (content is visible by default; JS only animates sections that start below the fold) */
 .fade-in { transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -1060,11 +1077,13 @@ footer span { color: var(--text); font-weight: 600; }
           <div class="exp-role">DevOps Engineer</div>
           <div class="exp-company">Incube · Startup Growth & Multi-product Engineering · Remote</div>
           <ul class="exp-bullets">
-            <li>Managed AKS clusters — pod troubleshooting, resource scaling, and multi-env workload deployments</li>
-            <li>Integrated Trivy security scanning into Jenkins pipelines for container vulnerability management</li>
+            <li>Managed AKS clusters running 10 to 30 Docker-based workloads — pod troubleshooting, resource scaling, and multi-env deployments</li>
+            <li>Maintained Jenkins pipelines of 5 to 8 stages deploying with Helm to 3 environments (Dev/Staging/Prod), with Trivy image scanning for container vulnerability management</li>
             <li>Implemented full observability stack: Prometheus + Grafana + Loki + Blackbox Exporter + Slack alerting</li>
             <li>Deployed and managed Redis, pgAdmin, and Azure File Share for persistent storage</li>
             <li>Built automated multi-environment backup scripts (Dev/Staging/Prod) with Telegram notifications</li>
+            <li>Resolved cost inefficiencies (unattached disks, idle VMs) and built a daily Azure Cost Management alert (Logic App to Telegram) that catches anomalies faster than monthly reporting</li>
+            <li>Worked in a private Git repository using branches, with every change code-reviewed before merge</li>
           </ul>
           <div class="exp-tags">
             <span class="exp-tag">AKS</span>
@@ -1076,6 +1095,8 @@ footer span { color: var(--text); font-weight: 600; }
             <span class="exp-tag">Helm</span>
             <span class="exp-tag">Docker</span>
             <span class="exp-tag">Bash</span>
+            <span class="exp-tag">Azure Cost Management</span>
+            <span class="exp-tag">Logic Apps</span>
           </div>
         </div>
       </div>
@@ -1368,6 +1389,7 @@ footer span { color: var(--text); font-weight: 600; }
 <footer>
   <div class="wrap">
     <span>Abdullah Dawii</span> · DevOps & SRE Engineer · Cairo, Egypt · 2026
+    <!--CI-STATUS-->
   </div>
 </footer>
 
